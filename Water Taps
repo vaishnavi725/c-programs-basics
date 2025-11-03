@@ -1,0 +1,8 @@
+#include <stdio.h>
+int main() {
+    double x, y;
+    scanf("%lf %lf", &x, &y);
+    double time = (x * y) / (x + y);
+    printf("%.2f", time);
+    return 0;
+}
