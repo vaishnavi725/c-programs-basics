@@ -1,0 +1,9 @@
+#include <stdio.h>
+int main() {
+    int x, y, z;
+    scanf("%d %d %d", &x, &y, &z);
+    int total = x * 5 + y * 10;
+    int chocolates = total / z;
+    printf("%d", chocolates);
+    return 0;
+}
