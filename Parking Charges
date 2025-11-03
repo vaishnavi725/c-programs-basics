@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main() {
+    int x, y, h;
+    scanf("%d %d %d", &x, &y, &h);
+    int total;
+    if (h <= 1)
+        total = x;
+    else
+        total = x + (h - 1) * y;
+    printf("%d", total);
+    return 0;
+}
