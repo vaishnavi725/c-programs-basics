@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int x, y, M, r, c;
+    scanf("%d %d %d", &x, &y, &M);
+    r = pow(x, y);
+    c = r % M;
+    printf("%d", c);
+    return 0;
+}
