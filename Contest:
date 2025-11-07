@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int X, A, B, total;
+    scanf("%d %d %d", &X, &A, &B);
+
+    total = A * 1 + B * 2;
+
+    if (total >= X)
+        printf("Qualify\n");
+    else
+        printf("Not Qualify\n");
+
+    return 0;
+}
