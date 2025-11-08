@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int a1, a2, a3, b1, b2, b3;
+    scanf("%d %d %d %d %d %d", &a1, &a2, &a3, &b1, &b2, &b3);
+
+    int minA = (a1 < a2) ? ((a1 < a3) ? a1 : a3) : ((a2 < a3) ? a2 : a3);
+    int alice_score = a1 + a2 + a3 - minA;
+
+    int minB = (b1 < b2) ? ((b1 < b3) ? b1 : b3) : ((b2 < b3) ? b2 : b3);
+    int bob_score = b1 + b2 + b3 - minB;
+
+    if (alice_score > bob_score)
+        printf("Alice");
+    else if (bob_score > alice_score)
+        printf("Bob");
+    else
+        printf("Tie");
+
+    return 0;
+}
