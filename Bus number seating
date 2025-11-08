@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int N;
+    scanf("%d", &N);
+
+    if (N >= 1 && N <= 15) { 
+        if (N % 5 == 0)     
+            printf("Lower Single\n");
+        else
+            printf("Lower Double\n");
+    } 
+    else if (N >= 16 && N <= 30) {
+        if (N % 5 == 0)           
+            printf("Upper Single\n");
+        else
+            printf("Upper Double\n");
+    }
+
+    return 0;
+}
