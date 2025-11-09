@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main()
+{
+    int total, attended;
+    scanf("%d %d", &total, &attended);
+    float percentage = (attended * 100.0) / total;
+    if (percentage >= 75)
+        printf("YES\n");
+    else
+        printf("NO\n");
+    return 0;
+}
