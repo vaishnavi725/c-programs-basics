@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main()
+{
+    int N, M;
+    scanf("%d %d", &N, &M);
+    float online = N - (0.1 * N);
+    
+    if (online < M)
+        printf("ONLINE\n");
+    else if (online > M)
+        printf("DINING\n");
+    else
+        printf("EITHER\n");
+    
+    return 0;
+}
